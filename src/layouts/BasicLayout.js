@@ -171,10 +171,10 @@ class BasicLayout extends React.PureComponent {
   getPageTitle() {
     const { location, getRouteData } = this.props;
     const { pathname } = location;
-    let title = 'Ant Design Pro';
+    let title = '宇康感知';
     getRouteData('BasicLayout').forEach((item) => {
       if (item.path === pathname) {
-        title = `${item.name} - Ant Design Pro`;
+        title = `${item.name} - 宇康感知`;
       }
     });
     return title;
@@ -275,7 +275,7 @@ class BasicLayout extends React.PureComponent {
           <div className={styles.logo}>
             <Link to="/">
               <img src={logo} alt="logo" />
-              <h1>Ant Design Pro</h1>
+              <h1>宇康感知</h1>
             </Link>
           </div>
           <Menu
@@ -348,7 +348,7 @@ class BasicLayout extends React.PureComponent {
               ) : <Spin size="small" style={{ marginLeft: 8 }} />}
             </div>
           </Header>
-          <Content style={{ margin: '24px 24px 0', height: '100%' }}>
+          <Content style={{ margin: '24px 24px 0', height: '100%', overflow: 'initial' }}>
             <div style={{ minHeight: 'calc(100vh - 260px)' }}>
               <Switch>
                 {
@@ -368,6 +368,7 @@ class BasicLayout extends React.PureComponent {
               </Switch>
             </div>
             <GlobalFooter
+              /*
               links={[{
                 title: 'Pro 首页',
                 href: 'http://pro.ant.design',
@@ -381,9 +382,10 @@ class BasicLayout extends React.PureComponent {
                 href: 'http://ant.design',
                 blankTarget: true,
               }]}
+              */
               copyright={
                 <div>
-                  Copyright <Icon type="copyright" /> 2017 蚂蚁金服体验技术部出品
+                  Copyright <Icon type="copyright" /> 2017 宇康感知
                 </div>
               }
             />

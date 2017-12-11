@@ -57,11 +57,11 @@ export default class NoticeIcon extends PureComponent {
       );
     });
     return (
-      <Spin spinning={loading} delay={0}>
-        <Tabs className={styles.tabs} onChange={this.onTabChange}>
-          {panes}
-        </Tabs>
-      </Spin>
+      // <Spin spinning={loading} delay={0}>
+      <Tabs className={styles.tabs} onChange={this.onTabChange}>
+        {panes}
+      </Tabs>
+      // </Spin>
     );
   }
   render() {

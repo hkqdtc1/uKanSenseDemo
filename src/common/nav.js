@@ -20,23 +20,24 @@ export const getNavData = app => [
         icon: 'dashboard',
         path: 'dashboard',
         children: [
+          // {
+          //   name: '分析页',
+          //   path: 'analysis',
+          //   component: dynamicWrapper(app, ['chart'], () => import('../routes/Dashboard/Analysis')),
+          // },
+          // {
+          //   name: '监控页',
+          //   path: 'monitor',
+          //   component: dynamicWrapper(app, ['monitor'], () => import('../routes/Dashboard/Monitor')),
+          // },
           {
-            name: '分析页',
-            path: 'analysis',
-            component: dynamicWrapper(app, ['chart'], () => import('../routes/Dashboard/Analysis')),
-          },
-          {
-            name: '监控页',
-            path: 'monitor',
-            component: dynamicWrapper(app, ['monitor'], () => import('../routes/Dashboard/Monitor')),
-          },
-          {
-            name: '工作台',
+            name: '主页',
             path: 'workplace',
             component: dynamicWrapper(app, ['project', 'activities', 'chart'], () => import('../routes/Dashboard/Workplace')),
           },
         ],
       },
+      /*
       {
         name: '表单页',
         path: 'form',
@@ -162,6 +163,7 @@ export const getNavData = app => [
           },
         ],
       },
+      */
     ],
   },
   {
@@ -192,15 +194,5 @@ export const getNavData = app => [
         ],
       },
     ],
-  },
-  {
-    component: dynamicWrapper(app, [], () => import('../layouts/BlankLayout')),
-    layout: 'BlankLayout',
-    children: {
-      name: '使用文档',
-      path: 'http://pro.ant.design/docs/getting-started',
-      target: '_blank',
-      icon: 'book',
-    },
   },
 ];

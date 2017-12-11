@@ -12,27 +12,27 @@ import styles from './Workplace.less';
 
 const links = [
   {
-    title: '操作一',
+    title: '报销',
     href: '',
   },
   {
-    title: '操作二',
+    title: '请假',
     href: '',
   },
   {
-    title: '操作三',
+    title: '离职',
     href: '',
   },
   {
-    title: '操作四',
+    title: '咨询',
     href: '',
   },
   {
-    title: '操作五',
+    title: '购买',
     href: '',
   },
   {
-    title: '操作六',
+    title: '其他操作',
     href: '',
   },
 ];
@@ -40,32 +40,62 @@ const links = [
 const members = [
   {
     id: 'members-1',
-    title: '科学搬砖组',
+    title: '姓名：曲丽丽',
     logo: 'https://gw.alipayobjects.com/zos/rmsportal/keeYtvRpGFVVKOOiOZDS.png',
     link: '',
   },
   {
     id: 'members-2',
-    title: '程序员日常',
+    title: '年龄：49岁',
     logo: 'https://gw.alipayobjects.com/zos/rmsportal/HpGtMMahFSHCFrLHoRgp.png',
     link: '',
   },
   {
     id: 'members-3',
-    title: '设计天团',
+    title: '职位：管理员',
     logo: 'https://gw.alipayobjects.com/zos/rmsportal/vbkXPXkeyhWWEQKpTmyB.png',
     link: '',
   },
   {
     id: 'members-4',
-    title: '中二少女团',
+    title: '性别：女',
     logo: 'https://gw.alipayobjects.com/zos/rmsportal/UXeAaBwlPaPqIVOjMqpK.png',
     link: '',
   },
   {
     id: 'members-5',
-    title: '骗你学计算机',
+    title: '联系电话：181-xxxx-xxxx',
     logo: 'https://gw.alipayobjects.com/zos/rmsportal/lPPRIxHBXYiVglbTqzUM.png',
+    link: '',
+  },
+  {
+    id: 'members-6',
+    title: '紧急联系人：186-xxxx-xxxx',
+    link: '',
+  },
+  {
+    id: 'members-7',
+    title: '卧床：否',
+    link: '',
+  },
+  {
+    id: 'members-8',
+    title: '失能失智：否',
+    link: '',
+  },
+  {
+    id: 'members-9',
+    title: '当前位置：308房间',
+    link: '',
+  },
+  {
+    id: 'members-10',
+    title: '陪护护工：张翠花',
+    link: '',
+  },
+  {
+    id: 'members-11',
+    title: '电子病历',
     link: '',
   },
 ];
@@ -143,7 +173,7 @@ export default class Workplace extends PureComponent {
         </div>
         <div className={styles.content}>
           <div className={styles.contentTitle}>早安，曲丽丽，祝你开心每一天！</div>
-          <div>交互专家 | 蚂蚁金服－某某某事业群－某某平台部－某某技术部－UED</div>
+          <div>老年公寓管理员 | 宿迁红枫老年公寓</div>
         </div>
       </div>
     );
@@ -151,15 +181,15 @@ export default class Workplace extends PureComponent {
     const pageHeaderExtra = (
       <div className={styles.pageHeaderExtra}>
         <div>
-          <p>项目数</p>
+          <p>当前任务</p>
           <p>56</p>
         </div>
         <div>
-          <p>团队内排名</p>
+          <p>任务完数排名</p>
           <p>8<span> / 24</span></p>
         </div>
         <div>
-          <p>项目访问</p>
+          <p>已完成任务数</p>
           <p>2,223</p>
         </div>
       </div>
@@ -224,7 +254,7 @@ export default class Workplace extends PureComponent {
           <Col xl={8} lg={24} md={24} sm={24} xs={24}>
             <Card
               style={{ marginBottom: 24 }}
-              title="快速开始 / 便捷导航"
+              title="快速操作"
               bordered={false}
               bodyStyle={{ padding: 0 }}
             >
@@ -234,6 +264,7 @@ export default class Workplace extends PureComponent {
                 linkElement={Link}
               />
             </Card>
+            {/*
             <Card
               style={{ marginBottom: 24 }}
               bordered={false}
@@ -244,16 +275,17 @@ export default class Workplace extends PureComponent {
                 <Radar hasLegend height={343} data={radarData} />
               </div>
             </Card>
+            */}
             <Card
               bodyStyle={{ paddingTop: 12, paddingBottom: 12 }}
               bordered={false}
-              title="团队"
+              title="个人信息"
             >
               <div className={styles.members}>
                 <Row gutter={48}>
                   {
                     members.map(item => (
-                      <Col span={12} key={`members-item-${item.id}`}>
+                      <Col span={24} key={`members-item-${item.id}`}>
                         <Link to={item.link}>
                           <Avatar src={item.logo} size="small" />
                           <span className={styles.member}>{item.title}</span>
