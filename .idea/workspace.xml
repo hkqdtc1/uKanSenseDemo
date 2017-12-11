@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df46eb42-37eb-4e1c-9bbe-bfe73750a33b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="$PROJECT_DIR$/mock/api.js" afterPath="$PROJECT_DIR$/mock/api.js" />
-      <change beforePath="$PROJECT_DIR$/mock/notices.js" afterPath="$PROJECT_DIR$/mock/notices.js" />
-      <change beforePath="$PROJECT_DIR$/src/common/nav.js" afterPath="$PROJECT_DIR$/src/common/nav.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/NoticeIcon/index.js" afterPath="$PROJECT_DIR$/src/components/NoticeIcon/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/e2e/home.e2e.js" afterPath="$PROJECT_DIR$/src/e2e/home.e2e.js" />
-      <change beforePath="$PROJECT_DIR$/src/e2e/login.e2e.js" afterPath="$PROJECT_DIR$/src/e2e/login.e2e.js" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/BasicLayout.js" afterPath="$PROJECT_DIR$/src/layouts/BasicLayout.js" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/UserLayout.js" afterPath="$PROJECT_DIR$/src/layouts/UserLayout.js" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Dashboard/Workplace.js" afterPath="$PROJECT_DIR$/src/routes/Dashboard/Workplace.js" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Dashboard/Workplace.less" afterPath="$PROJECT_DIR$/src/routes/Dashboard/Workplace.less" />
-      <change beforePath="$PROJECT_DIR$/src/routes/User/Login.js" afterPath="$PROJECT_DIR$/src/routes/User/Login.js" />
-      <change beforePath="$PROJECT_DIR$/src/routes/User/RegisterResult.js" afterPath="$PROJECT_DIR$/src/routes/User/RegisterResult.js" />
-    </list>
+    <list default="true" id="df46eb42-37eb-4e1c-9bbe-bfe73750a33b" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -88,7 +73,7 @@
       <file leaf-file-name="Workplace.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/routes/Dashboard/Workplace.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-128">
+            <state relative-caret-position="-146">
               <caret line="234" column="26" lean-forward="false" selection-start-line="234" selection-start-column="26" selection-end-line="234" selection-end-column="26" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
@@ -365,12 +350,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1512951948780</updated>
-      <workItem from="1512951950927" duration="7997000" />
+      <workItem from="1512951950927" duration="8189000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7997000" />
+    <option name="totallyTimeSpent" value="8189000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -787,7 +772,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/routes/Dashboard/Workplace.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-128">
+        <state relative-caret-position="-146">
           <caret line="234" column="26" lean-forward="false" selection-start-line="234" selection-start-column="26" selection-end-line="234" selection-end-column="26" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
